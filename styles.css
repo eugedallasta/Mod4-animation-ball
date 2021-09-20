@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+.container {
+  background: lightslategray;
+  height: 600px;
+  width: 600px;
+  position: absolute;
+}
+.ball {
+  background: url(./descarga.jpeg);
+  background-position: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  position: relative;
+  animation: bounce 5s linear infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translate (0px, 0px);
+    height: 100px;
+    width: 100px;
+  }
+  20% {
+    transform: translate(100px, 500px);
+    height: 85px;
+    width: 105px;
+  }
+  40% {
+    transform: translate(200px, -0px);
+    height: 100px;
+    width: 100px;
+  }
+  60% {
+    transform: translate(300px, 500px);
+    height: 85px;
+    width: 105px;
+  }
+  80% {
+    transform: translate(400px, -0px);
+    height: 100px;
+    width: 100px;
+  }
+  100% {
+    transform: translate(500px, 500px);
+    height: 85px;
+    width: 105px;
+  }
+}
